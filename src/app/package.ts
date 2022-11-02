@@ -1,4 +1,4 @@
-import { Lodgings } from "./lodging";
+import { Lodging } from "./lodging";
 
 export interface Package {
   id?: number;
@@ -8,6 +8,6 @@ export interface Package {
   startdate: string;
   enddate:string;
   price: number;
-/*   lodging: Lodgings; */
+  lodging: Lodging;
   categories: string[];
 }

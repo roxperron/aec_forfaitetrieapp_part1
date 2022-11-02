@@ -1,9 +1,9 @@
-export interface Lodgings {
+export interface Lodging {
     name: string;
     description: string;
     address: string;
     city: string;
-    phonenumber: number;
+    phonenumber: string;
     email: string;
     website: string;
     
