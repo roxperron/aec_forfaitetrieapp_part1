@@ -11,13 +11,15 @@ import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
+import { MiniCardPackageComponent } from './mini-card-package/mini-card-package.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PackagesListComponent,
-    PackageComponent
+    PackageComponent,
+    MiniCardPackageComponent
   ],
   imports: [
     BrowserModule,

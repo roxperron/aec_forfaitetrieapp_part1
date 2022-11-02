@@ -6,7 +6,5 @@ export interface Lodgings {
     phonenumber: number;
     email: string;
     website: string;
-    startdate: string;
-    enddate:string;
-    price: number;
+    
 }

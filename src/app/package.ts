@@ -1,7 +1,13 @@
+import { Lodgings } from "./lodging";
+
 export interface Package {
   id?: number;
   code: string;
   name: string;
   description: string;
-  categorie: string;
+  startdate: string;
+  enddate:string;
+  price: number;
+/*   lodging: Lodgings; */
+  categories: string[];
 }
