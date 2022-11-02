@@ -1,5 +1,7 @@
 .minipackage__card{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 30%;
     padding: 20px;
     margin: 5px;
