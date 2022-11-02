@@ -3,5 +3,5 @@ export interface Package {
   code: string;
   name: string;
   description: string;
-  catogrie: string;
+  categorie: string;
 }
