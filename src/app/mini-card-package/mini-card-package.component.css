@@ -1,8 +1,15 @@
+
+.minipackagecard__container{
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+   flex-direction: row;
+   padding: 25px;
+}
+
 .minipackage__card{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 30%;
+    display: inline-block;
+    width: 20%;
     padding: 20px;
     margin: 5px;
 }

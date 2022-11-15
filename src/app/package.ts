@@ -8,6 +8,9 @@ export interface Package {
   startdate: string;
   enddate:string;
   price: number;
+  newprice?: number;
+  rank: string;
+  prenium?: boolean;
   lodging: Lodging;
   categories: string[];
 }

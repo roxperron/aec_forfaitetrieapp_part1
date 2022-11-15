@@ -1,16 +1,22 @@
-<mat-card class="minipackage__card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{package?.name}}</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="https://www.pexels.com/fr-fr/photo/photo-de-bouteille-de-vin-et-de-nourriture-sur-la-table-1579253/" alt="Photo d'une chambre d'hôtel avec cadeaux d'acceuil">
-    <mat-card-content>
-      <p>{{package?.description}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-icon-button><span class="minipackage__icon">
-        <mat-icon>info </mat-icon>
-        </span></button>
-    </mat-card-actions>
-  </mat-card>
-  
+
+  <div class="minipackagecard__container">
+        <mat-card class="minipackage__card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{package?.name}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://www.pexels.com/fr-fr/photo/photo-de-bouteille-de-vin-et-de-nourriture-sur-la-table-1579253/" alt="Photo d'une chambre d'hôtel avec cadeaux d'acceuil">
+            <mat-card-content>
+              <p>{{package?.description}}</p>
+              <!-- Classe spécifique aux forfait preniums -->
+              <span class="prenium__package" *ngIf="package?.prenium === true"></span>
+              <!-- Afficher que les forfait prenium -->
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-icon-button><span class="minipackage__icon">
+                <mat-icon>info </mat-icon>
+                </span></button>
+            </mat-card-actions>
+          </mat-card>
+  </div>
+

@@ -7,12 +7,26 @@
     <img mat-card-image src="https://www.pexels.com/fr-fr/photo/photo-de-bouteille-de-vin-et-de-nourriture-sur-la-table-1579253/" alt="Photo d'une chambre d'hôtel avec cadeaux d'acceuil">
     <mat-card-content>
       <p>{{package?.description}}</p>
-      <mat-card-subtitle> #CODE: {{package?.code}}</mat-card-subtitle>
-      <mat-card-subtitle>{{package?.lodging}}</mat-card-subtitle>
-      <mat-card-subtitle> DU: {{package?.startdate}}</mat-card-subtitle>
-      <mat-card-subtitle> AU: {{package?.enddate}}</mat-card-subtitle>
-      <mat-card-subtitle>{{package?.price}} $</mat-card-subtitle>
-      <mat-card-subtitle>{{package?.categories}}</mat-card-subtitle>
+      <div>
+          <mat-card-subtitle> #CODE: {{package?.code}}</mat-card-subtitle>
+          <p>Nom: {{package?.lodging?.name}}</p>
+          <p>Description:{{package?.lodging?.description}}</p>
+          <p>Adresse: {{package?.lodging?.address}} {{package?.lodging?.city}}</p>
+          <p>Numéro de téléphone: {{package?.lodging?.phonenumber}}</p>
+          <p>Courriel: {{package?.lodging?.email}}</p>
+          <p>Site web: {{package?.lodging?.website}}</p>
+     </div>
+     <div>
+        <mat-card-subtitle>En vigeur du: {{package?.startdate}}</mat-card-subtitle>
+        <mat-card-subtitle>Jusqu'au: {{package?.enddate}}</mat-card-subtitle>
+
+        <!-- S'il y a un nouveau prix au forfait   -->
+<!--         <span class"package__newprice" *ngIf="package?.newprice">Économies de:</span> -->
+
+        <mat-card-subtitle>Prix: {{package?.price}} $</mat-card-subtitle>
+        <span></span>
+    </div>
+      <mat-card-subtitle>Catégories: {{package?.categories}}</mat-card-subtitle>
     </mat-card-content>
     <mat-card-actions>
       <button mat-icon-button><span class="package__icon">

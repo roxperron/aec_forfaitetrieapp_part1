@@ -12,6 +12,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import { MiniCardPackageComponent } from './mini-card-package/mini-card-package.component';
+import { PackageFormComponent } from './package-form/package-form.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MiniCardPackageComponent } from './mini-card-package/mini-card-package.
     AppComponent,
     PackagesListComponent,
     PackageComponent,
-    MiniCardPackageComponent
+    MiniCardPackageComponent,
+    PackageFormComponent
   ],
   imports: [
     BrowserModule,

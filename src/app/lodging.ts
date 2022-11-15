@@ -3,6 +3,7 @@ export interface Lodging {
     description: string;
     address: string;
     city: string;
+    postalcode: string;
     phonenumber: string;
     email: string;
     website: string;
