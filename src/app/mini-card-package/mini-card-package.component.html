@@ -10,7 +10,7 @@
               <p>Établissement: {{package?.lodging?.name}}</p>
               <p>Date de début: {{package?.startdate}}</p>
               <p>Date de fin: {{package?.enddate}}</p>
-              <app-price [price]="package?.price"></app-price>
+              <app-price [price]="package?.price || 0 " [newprice]="package?.newprice || 0"></app-price>
             
             </mat-card-content>
             <mat-card-actions>

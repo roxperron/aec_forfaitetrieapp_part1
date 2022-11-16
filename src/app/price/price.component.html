@@ -1,1 +1,8 @@
-Prix régulier: {{price}} $
+<span  [ngStyle]="{'text-decoration': (newprice) ? 'line-through' : ''}">Prix régulier: {{price}} $</span> 
+<!-- [ngStyle]="{'background-color':(package?.prenium ? '#ffbc0a': '')} -->
+
+ 
+        <!-- S'il y a un nouveau prix au forfait   "  -->
+        <span *ngIf="newprice"> Prix promotionnel : {{newprice}} $ <br> Économies de: {{price - newprice}} $</span>
+     
+

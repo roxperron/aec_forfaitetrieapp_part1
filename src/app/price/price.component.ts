@@ -7,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./price.component.css']
 })
 export class PriceComponent implements OnInit {
-@Input() price? = 0;
+@Input() price = 0;
+@Input() newprice = 0;
   constructor() { }
 
   ngOnInit(): void {

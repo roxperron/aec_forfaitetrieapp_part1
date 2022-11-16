@@ -12,7 +12,7 @@ export const PACKAGES: Package[] = [
         price: 260,
         lodging:{name: "Manoir du Lac William", description:"Hôtel & Spa", address:"3180 rue Principale", city:"Saint-Ferdinand", postalcode:"G0N 1N0", phonenumber:"1 800-428-9188", email:"info@manoirdulac.com", website:"https://www.manoirdulac.com/"},
         categories: ["Hébergement" , "Restauration"],
-        rank: "Basic"
+        rank: "Basique"
     },
 
     {
@@ -24,7 +24,7 @@ export const PACKAGES: Package[] = [
         price: 460,
         lodging:{name: "Manoir du Lac William", description:"Hôtel & Spa", address:"3180 rue Principale", city:"Saint-Ferdinand", postalcode:"G0N 1N0", phonenumber:"1 800-428-9188", email:"info@manoirdulac.com", website:"https://www.manoirdulac.com/"},
         categories: ["Hébergement" , "Restauration"],
-        rank:"Standad"
+        rank:"Standard"
     },
 
     {
@@ -64,7 +64,7 @@ export const PACKAGES: Package[] = [
         newprice: 300,
         lodging:{name: "Repère Boréal", description:"Chalet", address:"3141, route du Fleuve, Les Éboulements", city:"Québec", postalcode:"G0A 2M0", phonenumber:"418-635-1153", email:"info@repereboreal.com", website:"https://www.repereboreal.com/"},
         categories: ["Hébergement" , "Nature" , "Spa"],
-        rank:"Basic"
+        rank:"Basique"
     },
 
     {
@@ -103,7 +103,7 @@ export const PACKAGES: Package[] = [
         price: 500,
         lodging:{name: "KiNipi spa nordique & hébergement", description:"Hôtel & Spa", address:"8210, boulevard des Forges,", city:"Trois-Rivières", postalcode:"G8Y 4W2", phonenumber:"819-693-9999", email:"commentaires@kinipi.ca", website:"https://www.kinipi.ca/"},
         categories: ["Hébergement" , "Spa", "Massotérapie"],
-        rank: "Basic"
+        rank: "Basique"
     },
 
     {

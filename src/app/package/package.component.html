@@ -1,17 +1,19 @@
 
-<mat-card class="package__card">
+<mat-card class="package__card" [ngStyle]="{'background-color':(package?.prenium ? '#ffbc0a': '')}">
+
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{package?.name}}</mat-card-title>
     </mat-card-header>
-    <img mat-card-image src="https://www.pexels.com/fr-fr/photo/photo-de-bouteille-de-vin-et-de-nourriture-sur-la-table-1579253/" alt="Photo d'une chambre d'hôtel avec cadeaux d'acceuil">
+   <!--  <img mat-card-image src="https://www.pexels.com/fr-fr/photo/photo-de-bouteille-de-vin-et-de-nourriture-sur-la-table-1579253/" alt="Photo d'une chambre d'hôtel avec cadeaux d'acceuil"> -->
     <mat-card-content>
       <p>{{package?.description}}</p>
       <div>
-          <mat-card-subtitle> #CODE: {{package?.code}}</mat-card-subtitle>
+          <mat-card-subtitle>Code: {{package?.code}}</mat-card-subtitle>
+          <mat-card-subtitle>Type de forfait: {{package?.rank}}</mat-card-subtitle>
           <p>Nom: {{package?.lodging?.name}}</p>
           <p>Description:{{package?.lodging?.description}}</p>
-          <p>Adresse: {{package?.lodging?.address}} {{package?.lodging?.city}}</p>
+          <p>Adresse: {{package?.lodging?.address}} {{package?.lodging?.city}} {{package?.lodging?.postalcode}}</p>
           <p>Numéro de téléphone: {{package?.lodging?.phonenumber}}</p>
           <p>Courriel: {{package?.lodging?.email}}</p>
           <p>Site web: {{package?.lodging?.website}}</p>
@@ -19,10 +21,11 @@
      <div>
         <mat-card-subtitle>En vigeur du: {{package?.startdate}}</mat-card-subtitle>
         <mat-card-subtitle>Jusqu'au: {{package?.enddate}}</mat-card-subtitle>
-        <app-price [price]="package?.price"></app-price><br>
-        <!-- S'il y a un nouveau prix au forfait   [ngStyle]="{'text-decoration': package?.price.line-through;}"  -->
-        <span class="package__newprice" *ngIf=" package?.newprice" > Prix promotionnel : {{package?.newprice}} $ <br> Économies de: {{(package?.price || 0) - (package?.newprice || 0)}} $</span>
-       
+        <mat-card-subtitle>Jusqu'au: {{package?.enddate}}</mat-card-subtitle>
+        <app-price [price]="package?.price || 0" [newprice]="package?.newprice || 0"></app-price><br>
+        
+        
+      
     </div>
       <mat-card-subtitle>Catégories: {{package?.categories}}</mat-card-subtitle>
     </mat-card-content>
