@@ -19,12 +19,10 @@
      <div>
         <mat-card-subtitle>En vigeur du: {{package?.startdate}}</mat-card-subtitle>
         <mat-card-subtitle>Jusqu'au: {{package?.enddate}}</mat-card-subtitle>
-
-        <!-- S'il y a un nouveau prix au forfait   -->
-<!--         <span class"package__newprice" *ngIf="package?.newprice">Économies de:</span> -->
-
-        <mat-card-subtitle>Prix: {{package?.price}} $</mat-card-subtitle>
-        <span></span>
+        <app-price [price]="package?.price"></app-price><br>
+        <!-- S'il y a un nouveau prix au forfait   [ngStyle]="{'text-decoration': package?.price.line-through;}"  -->
+        <span class="package__newprice" *ngIf=" package?.newprice" > Prix promotionnel : {{package?.newprice}} $ <br> Économies de: {{(package?.price || 0) - (package?.newprice || 0)}} $</span>
+       
     </div>
       <mat-card-subtitle>Catégories: {{package?.categories}}</mat-card-subtitle>
     </mat-card-content>

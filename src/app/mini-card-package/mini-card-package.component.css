@@ -7,9 +7,12 @@
    padding: 25px;
 }
 
-.minipackage__card{
+.prenium__package{
+    background-color: #ffc300;
+    color:#FFFFFF;
     display: inline-block;
     width: 20%;
     padding: 20px;
     margin: 5px;
 }
+

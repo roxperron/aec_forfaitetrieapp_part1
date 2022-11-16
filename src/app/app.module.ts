@@ -13,6 +13,11 @@ import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import { MiniCardPackageComponent } from './mini-card-package/mini-card-package.component';
 import { PackageFormComponent } from './package-form/package-form.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { PriceComponent } from './price/price.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -21,7 +26,9 @@ import { PackageFormComponent } from './package-form/package-form.component';
     PackagesListComponent,
     PackageComponent,
     MiniCardPackageComponent,
-    PackageFormComponent
+    PackageFormComponent,
+    PriceComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -31,6 +38,10 @@ import { PackageFormComponent } from './package-form/package-form.component';
     MatListModule,
     MatTableModule,
     MatIconModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
 
   ],
   providers: [],

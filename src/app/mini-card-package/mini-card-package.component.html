@@ -1,16 +1,17 @@
-
+   <!-- Afficher que les forfait prenium -->
   <div class="minipackagecard__container">
-        <mat-card class="minipackage__card">
+        <mat-card class="prenium__package" *ngIf="package?.prenium === true">
             <mat-card-header>
               <div mat-card-avatar class="example-header-image"></div>
               <mat-card-title>{{package?.name}}</mat-card-title>
             </mat-card-header>
-            <img mat-card-image src="https://www.pexels.com/fr-fr/photo/photo-de-bouteille-de-vin-et-de-nourriture-sur-la-table-1579253/" alt="Photo d'une chambre d'hôtel avec cadeaux d'acceuil">
+           <!--  <img mat-card-image src="https://www.pexels.com/fr-fr/photo/photo-de-bouteille-de-vin-et-de-nourriture-sur-la-table-1579253/" alt="Photo d'une chambre d'hôtel avec cadeaux d'acceuil"> -->
             <mat-card-content>
-              <p>{{package?.description}}</p>
-              <!-- Classe spécifique aux forfait preniums -->
-              <span class="prenium__package" *ngIf="package?.prenium === true"></span>
-              <!-- Afficher que les forfait prenium -->
+              <p>Établissement: {{package?.lodging?.name}}</p>
+              <p>Date de début: {{package?.startdate}}</p>
+              <p>Date de fin: {{package?.enddate}}</p>
+              <app-price [price]="package?.price"></app-price>
+            
             </mat-card-content>
             <mat-card-actions>
               <button mat-icon-button><span class="minipackage__icon">
@@ -19,4 +20,5 @@
             </mat-card-actions>
           </mat-card>
   </div>
+
 
