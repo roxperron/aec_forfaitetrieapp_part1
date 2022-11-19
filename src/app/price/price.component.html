@@ -1,8 +1,9 @@
-<span  [ngStyle]="{'text-decoration': (newprice) ? 'line-through' : ''}">Prix régulier: {{price}} $</span> 
-<!-- [ngStyle]="{'background-color':(package?.prenium ? '#ffbc0a': '')} -->
+<div>
+ <!-- Utiliser le composent réutilisable du prix régulier, le barré si le forfait a une valeur comme nouveau prix et inscrire l'économie en fesant la différence entres les 2 valeurs -->
+<span class="price__package" [ngStyle]="{'text-decoration': (newprice) ? 'line-through' : ''}">Prix régulier: {{price}} $</span>
 
  
-        <!-- S'il y a un nouveau prix au forfait   "  -->
-        <span *ngIf="newprice"> Prix promotionnel : {{newprice}} $ <br> Économies de: {{price - newprice}} $</span>
-     
+<!-- S'il y a un nouveau prix au forfait   "  -->
+<span class="price__package" *ngIf="newprice"> Prix promotionnel : {{newprice}} $ <br> Économies de: {{price - newprice}} $</span>
+</div>
 

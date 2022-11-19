@@ -30,17 +30,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Colors:
 
 black: #353535
-green: #3c6e71
 white: #ffffff
-ligth-gray:#d9d9d9
 blue:#284b63
 
-Fonts: 
-Great Vibes 
-Cookie 
 
-Gilda Display
-Arima Madurai 
+or: #fcbf49
+argent: #9a8c98
+bronze: #b07d62
 
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Cookie&family=Gilda+Display&family=Great+Vibes&display=swap');
+
 

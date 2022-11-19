@@ -18,6 +18,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { PriceComponent } from './price/price.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
+import { PackagesSearchComponent } from './packages-search/packages-search.component';
+import {MatSidenav, MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 @NgModule({
@@ -28,6 +31,7 @@ import {MatInputModule} from '@angular/material/input';
     MiniCardPackageComponent,
     PackageFormComponent,
     PriceComponent,
+    PackagesSearchComponent,
 
   ],
   imports: [
@@ -42,6 +46,7 @@ import {MatInputModule} from '@angular/material/input';
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
+    MatSidenavModule,
 
   ],
   providers: [],

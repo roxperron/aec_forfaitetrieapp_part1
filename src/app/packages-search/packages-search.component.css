@@ -1,0 +1,24 @@
+.search__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#3c6e71 ;
+    width: 100%;
+    padding: 30px;
+    margin: 10px;
+}
+
+.search__input{
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.search__button{
+    font-family: Cookie;
+    font-size: 30px;
+    padding:10px;
+    border-radius: 5px;
+    border:1px solid #FFFFFF;
+    color:#284b63;
+    margin: 5px;
+}
