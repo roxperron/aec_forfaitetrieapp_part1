@@ -1,5 +1,6 @@
-:host{
-    display: block;
-    background-color: #284b63;
-    color:#FFFFFF;
+
+.minicard__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,4 +1,6 @@
+import { _RecycleViewRepeaterStrategy } from "@angular/cdk/collections";
 import { Lodging } from "./lodging";
+
 
 export interface Package {
   id?: number;
@@ -13,4 +15,5 @@ export interface Package {
   prenium?: boolean;
   lodging: Lodging;
   categories: string[];
+
 }

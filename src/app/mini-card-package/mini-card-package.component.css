@@ -1,15 +1,12 @@
-.minicard__container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
+
 
 .prenium__package{
     background-color: #fcbf49;
     color:#FFFFFF;
-    width: 25%;
-    padding: 40px;
-    margin: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    height: 300px;
 }
 
 .mat-card-title{

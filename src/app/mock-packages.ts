@@ -39,6 +39,7 @@ export const PACKAGES: Package[] = [
         categories: ["Hébergement" , "Restauration" , "Massothérapie"],
         rank:"Prenium",
         prenium: true,
+       
     },
 
     {
