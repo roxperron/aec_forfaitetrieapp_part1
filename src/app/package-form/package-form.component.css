@@ -1,0 +1,17 @@
+.form__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 55px;
+    background-color: #d9d9d9;
+    color:#353535;
+    border-radius: 10px;
+}
+
+.form__division{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+

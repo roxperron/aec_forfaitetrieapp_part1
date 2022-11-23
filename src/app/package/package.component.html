@@ -31,7 +31,7 @@
             </div>
             <div>
               
-                      <!-- Utiliser le composent réutilisable du prix régulier et afficher le prix promotionnel s'il y en a un -->
+                      <!-- Utiliser le composent réutilisable du prix régulier et afficher le prix promotionnel sil y en a un -->
                
               <app-price [price]="package?.price || 0" [newprice]="package?.newprice || 0"></app-price><br>
           </div>
@@ -40,8 +40,16 @@
           <div>
             <mat-card-subtitle>Catégories: {{package?.categories}}</mat-card-subtitle>
           </div>
+
+          <ng-container>
+            <mat-card-subtitle *ngFor="let r of package?.reviews" >
+              Note sur 10 : {{r.rating}}
+              Commentaire : {{r.comments}}
+            </mat-card-subtitle>
+           
+          </ng-container>
         </mat-card-content>
-        
+      
         <div>
           <mat-card-actions class="packagesicon__container">
             <button mat-icon-button><span class="infopackage__icon">

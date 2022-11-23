@@ -1,4 +1,5 @@
 import { Lodging } from "./lodging";
+import { Reviews } from "./review";
 
 
 export interface Package {
@@ -14,5 +15,6 @@ export interface Package {
   prenium?: boolean;
   lodging: Lodging;
   categories: string[];
+  reviews:Reviews[];
   
 }

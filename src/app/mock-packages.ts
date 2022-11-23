@@ -12,7 +12,8 @@ export const PACKAGES: Package[] = [
         price: 260,
         lodging:{name: "Manoir du Lac William", description:"Hôtel & Spa", address:"3180 rue Principale", city:"Saint-Ferdinand", postalcode:"G0N 1N0", phonenumber:"1 800-428-9188", email:"info@manoirdulac.com", website:"https://www.manoirdulac.com/"},
         categories: ["Hébergement" , "Restauration"],
-        rank: "Basique"
+        rank: "Basique",
+        reviews: []
     },
 
     {
@@ -24,7 +25,17 @@ export const PACKAGES: Package[] = [
         price: 460,
         lodging:{name: "Manoir du Lac William", description:"Hôtel & Spa", address:"3180 rue Principale", city:"Saint-Ferdinand", postalcode:"G0N 1N0", phonenumber:"1 800-428-9188", email:"info@manoirdulac.com", website:"https://www.manoirdulac.com/"},
         categories: ["Hébergement" , "Restauration"],
-        rank:"Standard"
+        rank:"Standard",
+        reviews: [
+            {
+                rating: 6,
+                comments:"lorem impsum",
+            },
+            {
+                rating: 6,
+                comments:"lorem impsum",
+            }
+        ]
     },
 
     {
@@ -39,7 +50,12 @@ export const PACKAGES: Package[] = [
         categories: ["Hébergement" , "Restauration" , "Massothérapie"],
         rank:"Prenium",
         prenium: true,
-       
+        reviews: [
+            {
+                rating: 8,
+                comments:"lorem impsum",
+            }
+        ]
     },
 
     {
@@ -53,6 +69,12 @@ export const PACKAGES: Package[] = [
         categories: ["Hébergement" , "Nature" , "Spa"],
         rank:"Prenium",
         prenium: true,
+        reviews: [
+            {
+                rating: 9.5,
+                comments:"lorem impsum",
+            }
+        ]
     },
 
     {
@@ -65,7 +87,8 @@ export const PACKAGES: Package[] = [
         newprice: 300,
         lodging:{name: "Repère Boréal", description:"Chalet", address:"3141, route du Fleuve, Les Éboulements", city:"Québec", postalcode:"G0A 2M0", phonenumber:"418-635-1153", email:"info@repereboreal.com", website:"https://www.repereboreal.com/"},
         categories: ["Hébergement" , "Nature" , "Spa"],
-        rank:"Basique"
+        rank:"Basique",
+        reviews: []
     },
 
     {
@@ -78,7 +101,13 @@ export const PACKAGES: Package[] = [
         newprice: 380,
         lodging:{name: "Repère Boréal", description:"Chalet", address:"3141, route du Fleuve, Les Éboulements", city:"Québec", postalcode:"G0A 2M0", phonenumber:"418-635-1153", email:"info@repereboreal.com", website:"https://www.repereboreal.com/"},
         categories: ["Hébergement" , "Nature" , "Spa"],
-        rank:"Standard"
+        rank:"Standard",
+        reviews: [
+            {
+                rating: 8,
+                comments:"lorem impsum",
+            }
+        ]
     },
 
     {
@@ -93,6 +122,12 @@ export const PACKAGES: Package[] = [
         categories: ["Hébergement" , "Nature" , "Spa"],
         rank:"Prenium",
         prenium: true,
+        reviews: [
+            {
+                rating: 5,
+                comments:"lorem impsum",
+            }
+        ]
     },
     
     {
@@ -104,7 +139,13 @@ export const PACKAGES: Package[] = [
         price: 500,
         lodging:{name: "KiNipi spa nordique & hébergement", description:"Hôtel & Spa", address:"8210, boulevard des Forges,", city:"Trois-Rivières", postalcode:"G8Y 4W2", phonenumber:"819-693-9999", email:"commentaires@kinipi.ca", website:"https://www.kinipi.ca/"},
         categories: ["Hébergement" , "Spa", "Massotérapie"],
-        rank: "Basique"
+        rank: "Basique",
+        reviews: [
+            {
+                rating: 9,
+                comments:"lorem impsum",
+            }
+        ]
     },
 
     {
@@ -117,7 +158,13 @@ export const PACKAGES: Package[] = [
         newprice: 750,
         lodging:{name: "KiNipi spa nordique & hébergement", description:"Hôtel & Spa", address:"8210, boulevard des Forges,", city:"Trois-Rivières", postalcode:"G8Y 4W2", phonenumber:"819-693-9999", email:"commentaires@kinipi.ca", website:"https://www.kinipi.ca/"},
         categories: ["Hébergement" , "Spa", "Massotérapie", "Restauration"],
-        rank: "Standard"
+        rank: "Standard",
+        reviews: [
+            {
+                rating: 7,
+                comments:"lorem impsum",
+            }
+        ]
     },
 
     {
@@ -132,5 +179,11 @@ export const PACKAGES: Package[] = [
         categories: ["Hébergement" , "Spa", "Massotérapie", "Restauration"],
         rank: "Prenium",
         prenium: true,
+        reviews: [
+            {
+                rating: 10,
+                comments:"lorem impsum",
+            }
+        ]
     },
 ]
