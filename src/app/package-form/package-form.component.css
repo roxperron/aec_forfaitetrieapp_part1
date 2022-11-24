@@ -1,20 +1,25 @@
 .form__container{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #d9d9d9;
-    color:#353535;
-    border-radius: 15px;
-    padding: 15px;
-    font-family: Gilda Display;
-
+    width: 100%;
 }
 
 .form__division{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
     margin: 10px;
 }
 
+mat-card, mat-card-content, input, mat-label, mat-checkbox, textarea{
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    background-color: #d9d9d9;
+    font-family: Gilda Display;
+    font-size: 20px;
+    font-weight: bold;
+    color:#353535;
+}
